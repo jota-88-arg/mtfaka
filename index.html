@@ -46,7 +46,7 @@ footer{padding:28px 0;color:#65727a;text-align:center;font-size:.7rem;border-top
 /* ===== MTFAKA 2026 / CS 1.6 ARGENTINA REDESIGN ===== */
 body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:linear-gradient(rgba(255,255,255,.012) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.012) 1px,transparent 1px);background-size:42px 42px}
 header{border-bottom-color:rgba(117,163,183,.15)}
-.brand{font-style:italic}.brand:after{content:"  // 1.6";color:#667985;font-size:.7rem;letter-spacing:2px}
+.brand{font-style:italic}
 .hero{background:radial-gradient(circle at 78% 28%,rgba(255,106,0,.17),transparent 26%),radial-gradient(circle at 15% 35%,rgba(26,84,111,.3),transparent 31%),linear-gradient(135deg,#030609,#071018 58%,#0b0d0e)}
 .hero:before{content:"ARGENTINA";position:absolute;left:-22px;bottom:7%;font:900 clamp(5rem,18vw,14rem) "Barlow Condensed";letter-spacing:-5px;color:white;opacity:.018;transform:rotate(-5deg)}
 .kicker:before{content:"// ";color:#7f909a}.server{border-color:#304653}.server-name:after{content:"  🇦🇷";font-size:.8em}
@@ -63,6 +63,7 @@ header{border-bottom-color:rgba(117,163,183,.15)}
 .member:nth-child(4n+1) .member-art{background-image:url('img/player-1.svg')}.member:nth-child(4n+2) .member-art{background-image:url('img/player-2.svg')}.member:nth-child(4n+3) .member-art{background-image:url('img/player-3.svg')}.member:nth-child(4n) .member-art{background-image:url('img/player-4.svg')}
 .member-info{position:absolute;left:0;right:0;bottom:0;padding:19px 17px 16px;z-index:2}.member-number{font:800 .62rem Inter;color:var(--orange);letter-spacing:2px;margin-bottom:4px}.member strong{display:block;text-align:left!important;font:900 1.55rem "Barlow Condensed";line-height:1;text-transform:uppercase;text-shadow:0 2px 12px #000}.member small{display:block!important;text-align:left!important;font:800 .62rem Inter!important;color:#9aa8b0!important;margin-top:7px;text-transform:uppercase;letter-spacing:1px}.member.leader small{color:var(--orange)!important}.member-team{position:absolute;top:13px;left:13px;z-index:3;padding:6px 8px;border-radius:6px;background:rgba(3,7,10,.72);backdrop-filter:blur(7px);border:1px solid rgba(255,255,255,.12);font:900 .57rem Inter;letter-spacing:1.4px}.member.leader .member-team{background:rgba(255,106,0,.9);color:#101010;border-color:transparent}
 .roster-controls{display:flex;gap:8px;margin-top:5px}.roster-btn{width:44px;height:44px;border:1px solid #29404d;background:#0a141b;color:#fff;border-radius:10px;font-size:1.25rem;cursor:pointer;transition:.18s}.roster-btn:hover{background:var(--orange);color:#111;border-color:var(--orange)}.roster-note{margin-left:auto;align-self:center;color:#64747e;font-size:.68rem;font-weight:700}.roster-bottom{display:flex;align-items:center;gap:8px}
+.discord-cta{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;margin:24px 0 8px;padding:18px 22px;border-radius:14px;background:#5865F2;color:#fff;font-weight:900;font-size:clamp(.9rem,3vw,1.15rem);letter-spacing:.5px;text-transform:uppercase;box-shadow:0 14px 35px rgba(88,101,242,.25);transition:.2s}.discord-cta:hover{transform:translateY(-2px);filter:brightness(1.08)}
 .arg-line{height:3px;margin-top:22px;background:linear-gradient(90deg,#74acdf 0 33.33%,#fff 33.33% 66.66%,#74acdf 66.66%);opacity:.7;border-radius:4px}
 @media(min-width:700px){.member{flex-basis:250px;height:380px}}
 @media(min-width:1000px){.member{flex-basis:270px;height:400px}.roster-viewport{mask-image:linear-gradient(90deg,transparent,#000 2%,#000 98%,transparent)}}
@@ -70,7 +71,7 @@ header{border-bottom-color:rgba(117,163,183,.15)}
 
 /* ===== MTFAKA TEAM WALL ===== */
 .team-wall{position:relative;margin-top:28px;border:1px solid #213440;border-radius:18px;overflow:hidden;min-height:430px;background:#05090d}
-.team-wall-bg{position:absolute;inset:0;background:url('mtfaka-team-clean.png') center/cover no-repeat;filter:saturate(.8) contrast(1.05);opacity:.55}
+.team-wall-bg{position:absolute;inset:0;background:url('fondo-clan.jpeg') center/cover no-repeat;filter:saturate(.8) contrast(1.05);opacity:.55}
 .team-wall:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,9,13,.1),rgba(5,9,13,.48) 45%,rgba(5,9,13,.94) 100%)}
 .team-wall-content{position:relative;z-index:2;padding:26px 18px 20px;min-height:430px;display:flex;flex-direction:column;justify-content:flex-end}
 .team-wall-title{font:900 clamp(2.2rem,8vw,4.5rem) 'Barlow Condensed';line-height:.85;text-transform:uppercase;text-shadow:0 3px 18px #000}.team-wall-title span{color:var(--orange)}
@@ -80,7 +81,19 @@ header{border-bottom-color:rgba(117,163,183,.15)}
 
 
 .lang-switch{display:flex;gap:6px;margin-left:auto;margin-right:10px}.lang-btn{border:1px solid #29404d;background:#091119;color:#cbd5db;border-radius:8px;padding:8px 9px;font:800 .66rem Inter;cursor:pointer}.lang-btn.active,.lang-btn:hover{border-color:var(--orange);color:#fff;background:#111a21}@media(max-width:699px){.lang-switch{margin-left:6px;margin-right:6px}.lang-btn{padding:7px;font-size:.6rem}.nav-play{padding:9px 10px}}
-.team-wall{min-height:0!important;background:#05090d}.team-wall-bg{position:relative!important;inset:auto!important;width:100%;aspect-ratio:1672/225;background:url('mtfaka-team-clean.png') center/cover no-repeat!important;opacity:1!important;filter:none!important}.team-wall:after{display:none!important}.team-wall-content{min-height:0!important;padding:24px 18px!important;display:block!important;background:linear-gradient(180deg,#081018,#05090d)}.nick-cloud{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px!important}.nick-tag{display:block!important;text-align:center;background:#0a1219;border:1px solid #263640;border-radius:8px;padding:9px 6px;font-size:.68rem;font-weight:800;overflow-wrap:anywhere}.nick-tag:first-child{border-color:var(--orange);color:#ffb55e}@media(min-width:700px){.nick-cloud{grid-template-columns:repeat(4,minmax(0,1fr))}}@media(min-width:1000px){.nick-cloud{grid-template-columns:repeat(6,minmax(0,1fr))}}
+.team-wall{min-height:0!important;background:#05090d}.team-wall-bg{position:relative!important;inset:auto!important;width:100%;aspect-ratio:16/9;background:url('fondo-clan.jpeg') center/cover no-repeat!important;opacity:1!important;filter:none!important}.team-wall:after{display:none!important}.team-wall-content{min-height:0!important;padding:24px 18px!important;display:block!important;background:linear-gradient(180deg,#081018,#05090d)}.nick-cloud{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px!important}.nick-tag{display:block!important;text-align:center;background:#0a1219;border:1px solid #263640;border-radius:8px;padding:9px 6px;font-size:.68rem;font-weight:800;overflow-wrap:anywhere}.nick-tag:first-child{border-color:var(--orange);color:#ffb55e}@media(min-width:700px){.nick-cloud{grid-template-columns:repeat(4,minmax(0,1fr))}}@media(min-width:1000px){.nick-cloud{grid-template-columns:repeat(6,minmax(0,1fr))}}
+
+.discord-nav{padding:10px 14px;border-radius:9px;background:#5865F2;color:#fff;font-weight:900;font-size:.72rem;white-space:nowrap;transition:.2s}.discord-nav:hover{filter:brightness(1.1);transform:translateY(-1px)}
+@media(max-width:699px){.discord-nav{padding:8px 9px;font-size:.62rem}.brand{font-size:1.05rem}.nav{gap:4px}.nav-play{display:none}}
+
+/* ===== FLOATING ACTIONS ===== */
+.discord-nav{display:none!important}
+.floating-actions{position:fixed;right:18px;bottom:18px;z-index:80;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.floating-action{display:flex;align-items:center;justify-content:center;gap:9px;min-width:150px;padding:13px 17px;border-radius:12px;color:#fff;font:900 .75rem Inter;text-transform:uppercase;letter-spacing:.3px;box-shadow:0 10px 30px rgba(0,0,0,.38);transition:.18s;border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px)}
+.floating-action:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.floating-discord{background:#5865F2}
+.floating-play{background:linear-gradient(100deg,var(--orange2),var(--orange));color:#111;border-color:rgba(255,154,24,.6)}
+@media(max-width:699px){.floating-actions{right:12px;bottom:12px;gap:8px}.floating-action{min-width:132px;padding:11px 13px;font-size:.67rem;border-radius:10px}}
 </style>
 </head>
 <body>
@@ -144,6 +157,16 @@ header{border-bottom-color:rgba(117,163,183,.15)}
 
 <section class="final"><div class="container"><div class="kicker" data-i18n="seeYou">Nos vemos en</div><h2>DUST II</h2><p data-i18n="finalCopy">Entrá al servidor, encontrá al clan y viví el clásico como siempre, ahora directamente desde el navegador.</p><a class="play-btn" href="https://play-cs.com/play/27104/br" target="_blank"><span data-i18n="playFree">▶ &nbsp; JUGAR GRATIS AHORA &nbsp; →</span></a></div></section>
 </main>
+<section style="padding:42px 0;background:#05090d;border-top:1px solid #15212a;">
+<div class="container" style="text-align:center;">
+<div class="kicker">🌎 VISITANTES DE [MTFAKA]</div>
+<h2 style="font-size:clamp(2rem,8vw,3.5rem);margin:8px 0 10px;">¿DESDE DÓNDE NOS <em style="font-style:normal;color:var(--orange)">VISITAN?</em></h2>
+<p style="color:var(--muted);font-size:.8rem;margin:0 auto 20px;max-width:560px;line-height:1.6;">Mapa de visitantes de nuestra comunidad alrededor del mundo.</p>
+<a href="https://www.visitordots.com/details/vd_JkjTIhuVMRQYxHu_PDnrd117" target="_blank" rel="noopener" style="display:block;width:min(100%,420px);margin:auto;border:1px solid #213440;border-radius:14px;overflow:hidden;background:#fff;">
+<img src="https://map.visitordots.com/vmap/239137810444272.png" alt="Mapa de visitantes de MTFAKA" style="display:block;width:100%;height:auto;border:0">
+</a>
+</div>
+</section>
 <footer><div class="container"><b>[MTFAKA] Argentina</b> · Counter-Strike 1.6 · <span data-i18n="footerCommunity">Comunidad independiente de jugadores</span></div></footer>
 
 <script>
@@ -165,5 +188,10 @@ document.addEventListener('DOMContentLoaded',()=>{
  let saved='es';try{saved=localStorage.getItem('mtfaka-lang')||'es'}catch(e){} setLang(saved);
 });
 </script>
+
+<div class="floating-actions" aria-label="Accesos rápidos">
+  <a class="floating-action floating-discord" href="https://discord.gg/UhqXxYvdp" target="_blank" rel="noopener">💬 Discord</a>
+  <a class="floating-action floating-play" href="https://play-cs.com/play/27104/br" target="_blank" rel="noopener">▶ Jugar online</a>
+</div>
 </body>
 </html>
